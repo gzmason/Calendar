@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="google-signin-scope" content="https://www.googleapis.com/auth/calendar">
+    <meta name="google-signin-client_id" content="231408607225-t5smqmc1ua87kchb94embbf3a892i6qd.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sign-in.css" />
+    <script src="signinMethods.js"></script>
+  </head>
+  <body>
+			<div id="menubar">
+			
+			<div id="search-container">
+			    <form action="search.jsp">
+			      <input type="text" placeholder="Search Friends" name="search">
+			      <button type="submit"><i class="fa fa-search"></i></button>
+			    </form>
+			 </div>
+			 
+       		<ul id="menulist">
+          		<li class="menuitem" ><a onclick="toProfile()" style="color:white;font-family:American Typewriter;text-decoration:none;">Profile</a></li>
+          		<li class="menuitem" ><a onclick="toHome()" style="color:white;font-family:American Typewriter;text-decoration:none;">Home</a></li>
+        	</ul>
+      		</div>
+      		
+      		
+          	<img src="sakura2.png" /><br />.
+        	
+			
+			<div id="welcome">
+        		<h1>Sakura Calendar</h1>
+        	</div>    
+		    
+		    <div class="g-signin2" data-onsuccess="onSignIn" onclick="signOut()" data-theme="dark"></div>
+    
+    	
+    		
+<div id="downbar"></div>
+  </body>
+</html>
